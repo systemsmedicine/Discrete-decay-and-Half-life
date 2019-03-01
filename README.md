@@ -7,7 +7,7 @@ The Half-life is the time required for a quantity to reduce to half its initial 
 
 Given a half-life of a population and time-step size for the decay, we first set the constant probability of selection which indicates to either keep or not the selected individual. The time-step can be selected as a resolution parameter, the smaller time-step the higher resolution of decay. The population is any discrete quantity.
 
-The probability of elimination (dying) is given by:
+The probability of elimination (dying) is given by(code):
 prob_dying = 1 - np.exp(-L * step_long), where L = np.log(2)/Half_life.
 This probability is taken to select individuals to continue for the next time-step or not (live/die).
 On each time-step (step_long), individuals are uniformly randomly selected to be eliminated.
