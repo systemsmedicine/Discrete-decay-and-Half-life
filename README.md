@@ -10,3 +10,5 @@ Given a half-life of a population and time-step size for the decay, we first set
 The probability of elimination (dying) is given by:
 prob_dying = 1 - np.exp(-L * step_long), where L = np.log(2)/Half_life.
 This probability is taken to select individuals to continue for the next time-step or not (live/die).
+
+
