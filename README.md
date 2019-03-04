@@ -1,11 +1,11 @@
 # Discrete decay and Half-life
 Discrete-time approach for decay with a certain half-life.
 
-This code is based on the Tau-leaping approximate method which is used for the simulation of a stochastic system.
-You can see details of Tau-leaping here: https://en.wikipedia.org/wiki/Tau-leaping.
+This code is based on the Tau-leaping approximate method which is used for simulations of stochastic systems.
+Please see details of Tau-leaping here: https://en.wikipedia.org/wiki/Tau-leaping.
 The Half-life is the time required for a quantity to reduce to half its initial value, see https://en.wikipedia.org/wiki/Half-life.
 
-Given a half-life of a population and time-step size for the decay, we first set the constant probability of selection which indicates to either keep or not the selected individual. The time-step can be selected as a resolution parameter, the smaller time-step the higher resolution of decay. The population is any discrete quantity.
+Given the half-life of a population and time-step size for the decay, we set the probability of an individual to be selected. This indicates the probability to either keep or not the selected individual. The time-step can be selected as a resolution parameter, the smaller time-step the higher resolution of decay. The population is any discrete quantity. The initial population size is consistent with the "law of large numbers". The hihger the initial population the better behabiour of the discrete decay.
 
 The probability of elimination (dying) is given by(code):
 prob_dying = 1 - np.exp(-L * step_long), where L = np.log(2)/Half_life.
