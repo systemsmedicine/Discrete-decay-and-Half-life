@@ -14,6 +14,6 @@ On each time-step (step_long), individuals are uniformly randomly selected to be
 
 The file "Test_half_life_decay.py" sets different examples using this approach. The function is called from the file "py_funct_discrete_decay.py".  
 
-In the "Figs" carpet you can see different examples of time-step selection for a half-life of 72h with a population of 100000.
+In the "Figs" carpet you can see different examples of time-step selection for a half-life of 72h with a population of 10000.
 
 
